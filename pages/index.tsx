@@ -1,6 +1,5 @@
 import { GetStaticProps } from "next";
 import Head from "next/head";
-import Script from "next/script";
 import slugify from "slugify";
 
 // Data
@@ -85,12 +84,7 @@ const HomePage: React.FC<{ items: ProductWithSlug[] }> = ({ items }) => {
           content="Killed by JOSA"
         />
         <meta name="og:type" property="og:type" content="website" />
-        <meta name="author" content="Cody Ogden" />
-        <meta name="msvalidate.01" content="0C9605AF449480F57421EECCA9EB2B8A" />
-        <meta
-          name="google-site-verification"
-          content="9y9dretKdifnWDdkbkT9Qm1PtWMIe3qz6R09Xkm8Cdc"
-        />
+        <meta name="author" content="Baraa Al-Masri" />
       </Head>
       <Header />
       <App items={items} />
