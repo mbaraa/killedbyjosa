@@ -4,7 +4,6 @@ import { css } from '@emotion/react';
 
 // Import Styled Components
 import { FooterContainer, FlexWrap } from 'components/Footer/Footer.atoms';
-import { PressCoverage } from 'components';
 import Link from 'next/link';
 
 const SocialLink: FC<{ url: string; imgSrc: string; altText: string }> = ({
@@ -73,7 +72,6 @@ const SocialWrapper = styled.div(() => css({
 
 const Footer = () => (
     <>
-        <PressCoverage />
         <FooterContainer>
             <FlexWrap>
                 <FooterTitle>
