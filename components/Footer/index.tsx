@@ -139,7 +139,7 @@ const Footer = () => (
           <SocialLink
             url="https://github.com/mbaraa/killedbyjosa"
             altText="GitHub"
-            imgSrc="https://killedbyjosa.com/github.svg"
+            imgSrc="https://killedbyjosa.org/github.svg"
           />
         </SocialWrapper>
       </FlexWrap>
