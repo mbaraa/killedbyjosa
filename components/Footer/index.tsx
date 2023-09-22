@@ -16,25 +16,25 @@ const SocialLink: FC<{ url: string; imgSrc: string; altText: string }> = ({
   };
 
   return (
-    <Link href={url} passHref>
-      <a
+    <Link
+      href={url}
+      passHref
+      css={{
+        border: "none",
+      }}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img
         css={{
-          border: "none",
+          width: "24px",
+          height: "24px",
         }}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <img
-          css={{
-            width: "24px",
-            height: "24px",
-          }}
-          width="24px"
-          height="24px"
-          src={imgSrc}
-          alt={altText}
-        />
-      </a>
+        width="24px"
+        height="24px"
+        src={imgSrc}
+        alt={altText}
+      />
     </Link>
   );
 };
@@ -90,7 +90,7 @@ const Footer = () => (
             <img
               height="60px"
               width="60px"
-              src="https://static.killedbyjosa.com/com/tombstone-alt.svg"
+              src="https://static.killedbygoogle.com/com/tombstone-alt.svg"
               alt="Tombstone"
             />
           </div>
@@ -104,47 +104,37 @@ const Footer = () => (
             JOSA&apos;s dead projects.
           </p>
           <p>
-            <a
+            <Link
               href="https://github.com/mbaraa/killedbyjosa/graphs/contributors"
               target="_blank"
               rel="noopener noreferrer"
             >
               Contributors
-            </a>
+            </Link>
             &nbsp;from around the world help compile, research, and maintain the
             information about dying and dead JOSA products. You can join the
             discussion on&nbsp;
-            <a href="https://github.com/mbaraa/killedbyjosa">GitHub</a>. A
+            <Link href="https://github.com/mbaraa/killedbyjosa">GitHub</Link>. A
             project by&nbsp;
-            <a
+            <Link
               href="https://mbaraa.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Cody Ogden
-            </a>
+              Baraa Al-Masri
+            </Link>
             .
           </p>
           <p>
             Press inquiries and other assorted death threats?
             <br />
             Spam me at&nbsp;
-            <a href="mailto:pub@mbaraa.com">pub@mbaraa.com</a>.
+            <Link href="mailto:pub@mbaraa.com">pub@mbaraa.com</Link>.
           </p>
         </div>
-        <CopyNotice>
-          <a href="https://github.com/mbaraa/killedbyjosa/blob/main/LICENSE">
-            &copy; 2023 Cody Ogden, Baraa Al-Masri.
-          </a>
-          &nbsp;-&nbsp;
-          <a
-            href="https://analytics.kbg.rip"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Analytics
-          </a>
-        </CopyNotice>
+        <Link href="https://github.com/mbaraa/killedbyjosa/blob/main/LICENSE">
+          &copy; 2023 Cody Ogden, Baraa Al-Masri.
+        </Link>
         <SocialWrapper>
           <SocialLink
             url="https://github.com/mbaraa/killedbyjosa"

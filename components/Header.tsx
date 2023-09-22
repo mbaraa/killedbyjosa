@@ -35,25 +35,23 @@ const Title = styled.h1(() =>
 
 const Header = () => (
   <HeaderContainer>
-    <Link href="/" passHref>
-      <a
-        rel="noreferrer noopener"
-        css={{
-          borderBottom: 0,
-        }}
-      >
-        <BrandingContainer>
-          <Logo>
-            <img
-              width="60px"
-              src="https://static.killedbygoogle.com/com/tombstone.svg"
-              height="60px"
-              alt="Tombstone"
-            />
-          </Logo>
-          <Title>Killed by JOSA</Title>
-        </BrandingContainer>
-      </a>
+    <Link
+      href="/"
+      style={{
+        borderBottom: 0,
+      }}
+    >
+      <BrandingContainer>
+        <Logo>
+          <img
+            width="60px"
+            src="https://static.killedbygoogle.com/com/tombstone.svg"
+            height="60px"
+            alt="Tombstone"
+          />
+        </Logo>
+        <Title>Killed by JOSA</Title>
+      </BrandingContainer>
     </Link>
   </HeaderContainer>
 );
