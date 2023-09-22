@@ -90,7 +90,7 @@ const Footer = () => (
             <img
               height="60px"
               width="60px"
-              src="https://static.killedbygoogle.com/com/tombstone-alt.svg"
+              src="https://killedbyjosa.org/tombstone-alt.svg"
               alt="Tombstone"
             />
           </div>
@@ -139,7 +139,7 @@ const Footer = () => (
           <SocialLink
             url="https://github.com/mbaraa/killedbyjosa"
             altText="GitHub"
-            imgSrc="https://static.killedbyjosa.com/com/github.svg"
+            imgSrc="https://killedbyjosa.com/github.svg"
           />
         </SocialWrapper>
       </FlexWrap>

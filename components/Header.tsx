@@ -45,7 +45,7 @@ const Header = () => (
         <Logo>
           <img
             width="60px"
-            src="https://static.killedbygoogle.com/com/tombstone.svg"
+            src="https://killedbyjosa.org/tombstone.svg"
             height="60px"
             alt="Tombstone"
           />
