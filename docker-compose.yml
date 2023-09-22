@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  killedbyjosa:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: killedbyjosa
+    ports:
+      - 1920:3000
+    restart: always
+    stdin_open: true
