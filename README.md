@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://killedbyjosa.org/tombstone.png" alt="tombstone" style="height: 80px; width: 80px; padding: 0 20px;">
+  <img src="https://static.killedbyjosa.org/com/social/tombstone.png" alt="tombstone" style="height: 80px; width: 80px; padding: 0 20px;">
   <h1>Killed by JOSA</h1>
   <p>A tribute and log of beloved products and services killed by JOSA.</p>
 </div>
@@ -7,6 +7,7 @@
 <div align="center">
 
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](/LICENSE)
+[![rex-deploy](https://github.com/mbaraa/killedbyjosa/actions/workflows/rex-deploy.yml/badge.svg)](https://github.com/mbaraa/killedbyjosa/actions/workflows/rex-deploy.yml)
 
 </div>
 
