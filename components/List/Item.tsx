@@ -1,16 +1,16 @@
-import React from 'react';
-import dynamic from 'next/dynamic';
+import React from "react";
+import dynamic from "next/dynamic";
 import {
   format,
   formatDistance,
   parseISO,
   formatDistanceToNow,
-} from 'date-fns';
+} from "date-fns";
 
-import { ProductWithSlug } from 'types/Product';
-import Badge from 'components/Badge'; 
+import { ProductWithSlug } from "types/Product";
+import Badge from "components/Badge";
 
-const DeathIdiom = dynamic(() => import('./LeadPhrase'), { ssr: false });
+const DeathIdiom = dynamic(() => import("./LeadPhrase"), { ssr: false });
 
 // Import Styled Components
 import {
@@ -20,14 +20,12 @@ import {
   Icon,
   IconContainer,
   ListItem,
-} from './Item.atoms';
+} from "./Item.atoms";
 
 export default function Item(props: ProductWithSlug) {
-
   const isPast = () => {
     return new Date() > new Date(props.dateClose);
   };
-
 
   const dateOpen = parseISO(props.dateOpen);
   const dateClose = parseISO(props.dateClose);
@@ -44,9 +42,9 @@ export default function Item(props: ProductWithSlug) {
 
   const getIcon = () => {
     return isPast() ? (
-      <Icon src='https://static.killedbygoogle.com/com/tombstone.svg' alt="Tombstone" />
+      <Icon src="https://killedbyjosa.org/tombstone.svg" alt="Tombstone" />
     ) : (
-      <Icon src='https://static.killedbygoogle.com/com/guillotine.svg' alt="Guillotine" />
+      <Icon src="https://killedbyjosa.org/guillotine.svg" alt="Guillotine" />
     );
   };
 
@@ -54,7 +52,7 @@ export default function Item(props: ProductWithSlug) {
     const yearOpen = dateOpen.getFullYear();
     const yearClose = dateClose.getFullYear();
     if (!isPast()) {
-      const monthClose = format(dateClose, 'LLLL');
+      const monthClose = format(dateClose, "LLLL");
       return (
         <AgeRange>
           <time dateTime={props.dateClose} title={`${props.dateClose}`}>
@@ -70,7 +68,7 @@ export default function Item(props: ProductWithSlug) {
         <time dateTime={props.dateOpen} title={props.dateOpen}>
           {yearOpen}
         </time>
-        {' - '}
+        {" - "}
         <time dateTime={props.dateClose} title={props.dateClose}>
           {yearClose}
         </time>
@@ -91,7 +89,11 @@ export default function Item(props: ProductWithSlug) {
           </a>
         </h2>
         <Description>
-          {(isPast()) ? `Killed ${relativeDate} ago, ` : <DeathIdiom relativeDate={relativeDate} /> }
+          {isPast() ? (
+            `Killed ${relativeDate} ago, `
+          ) : (
+            <DeathIdiom relativeDate={relativeDate} />
+          )}
           {props.description}
           {getYears()}
         </Description>
@@ -99,4 +101,3 @@ export default function Item(props: ProductWithSlug) {
     </ListItem>
   );
 }
-
