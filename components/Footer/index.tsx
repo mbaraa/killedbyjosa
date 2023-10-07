@@ -98,22 +98,16 @@ const Footer = () => (
         </FooterTitle>
         <div>
           <p>
-            Killed by JOSA is the JOSA graveyard; a free and open source list of
-            discontinued JOSA services, products, devices, and apps. We aim to
-            be a source of factual information about the history surrounding
+            Killed by JOSA&nbsp;
+            <Link href="https://josa.ngo">
+              (Jordan Open Source Association)
+            </Link>
+            &nbsp; is the JOSA graveyard; a free and open source list of
+            discontinued JOSA services, products, and websites. We aim to be a
+            source of factual information about the history surrounding
             JOSA&apos;s dead projects.
           </p>
           <p>
-            <Link
-              href="https://github.com/mbaraa/killedbyjosa/graphs/contributors"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Contributors
-            </Link>
-            &nbsp;from around the world help compile, research, and maintain the
-            information about dying and dead JOSA products. You can join the
-            discussion on&nbsp;
             <Link href="https://github.com/mbaraa/killedbyjosa">GitHub</Link>. A
             project by&nbsp;
             <Link
@@ -126,6 +120,13 @@ const Footer = () => (
             .
           </p>
           <p>
+            This project is originally forked from&nbsp;
+            <Link href="https://github.com/codyogden/killedbygoogle">
+              Killed by Google
+            </Link>
+            &nbsp;and modified to be what you&apos;re seeing (Killed by JOSA)
+          </p>
+          <p>
             Press inquiries and other assorted death threats?
             <br />
             Spam me at&nbsp;
@@ -133,13 +134,13 @@ const Footer = () => (
           </p>
         </div>
         <Link href="https://github.com/mbaraa/killedbyjosa/blob/main/LICENSE">
-          &copy; 2023 Cody Ogden, Baraa Al-Masri.
+          &copy; {new Date().getFullYear()} Cody Ogden, Baraa Al-Masri.
         </Link>
         <SocialWrapper>
           <SocialLink
             url="https://github.com/mbaraa/killedbyjosa"
             altText="GitHub"
-            imgSrc="https://killedbyjosa.com/github.svg"
+            imgSrc="https://killedbyjosa.org/github.svg"
           />
         </SocialWrapper>
       </FlexWrap>
